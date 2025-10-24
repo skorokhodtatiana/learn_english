@@ -1,0 +1,41 @@
+@import "../../assets/variables";
+
+.fleshCard {
+	width: 15rem;
+	margin: 3rem auto;
+	height: 20rem;
+	background-color: #5e92bf;
+	font-family: "Source Code Pro", monospace;
+	font-weight: bold;
+	color: $customGray;
+
+	.fleshCard__englishWord {
+		font-size: 1.8rem;
+		margin-top: 35%;
+		text-align: center;
+	}
+
+	.fleshCard__transcription {
+		font-size: 0.8rem;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	.fleshCard__btnOpen {
+		display: block;
+		margin: 2rem auto;
+		color: $customGray;
+		border: 1px solid $customOrange;
+		border-radius: 8%;
+		background-color: $customOrange;
+
+		&:focus {
+		outline: 1px solid yellow;
+		}
+	}
+
+	.fleshCard__russianhWord {
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+}
