@@ -12,19 +12,19 @@ const FlashCard = React.forwardRef((props, ref) => {
 
 	return (
 		<div className="fleshCard">
-		<div className="fleshCard__englishWord">{englishWord}</div>
-		<div className="fleshCard__transcription">{transcription}</div>
-		{pressed ? (
-			<div className="fleshCard__russianhWord">{translation}</div>
-		) : (
-			<button
-			className="fleshCard__btnOpen"
-			ref={ref}
-			onClick={() => handlePressed()}
-			>
-			Перевод
-			</button>
-		)}
+			<div className="fleshCard__englishWord">{englishWord}</div>
+			<div className="fleshCard__transcription">{transcription}</div>
+			{pressed ? (
+				<div className="fleshCard__russianhWord">{translation}</div>
+			) : (
+				<button
+					className="fleshCard__btnOpen"
+					ref={ref}
+					onClick={() => handlePressed()}
+				>
+					Перевод
+				</button>
+			)}
 		</div>
 	);
 });

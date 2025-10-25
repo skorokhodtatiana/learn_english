@@ -1,11 +1,12 @@
-@import "../../assets/variables";
+@use '../../assets/variables.scss';
 
 .table {
 	width: 100%;
 	border: 1px solid black;
-	background-color: $customOrange;
+	background-color: variables.$customOrange;
 
 	.tbody {
+
 		tr {
 			width: 100%;
 			display: flex;
@@ -22,8 +23,8 @@
 		}
 
 		.button {
-			background-color: $customOrange;
-			border: 1px solid $customOrange;
+			background-color: variables.$customOrange;
+			border: 1px solid variables.$customOrange;
 
 			&:hover {
 				transform: scale(1.3);
